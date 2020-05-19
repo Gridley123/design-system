@@ -17375,6 +17375,15 @@ react-responsive@^8.0.3:
     prop-types "^15.6.1"
     shallow-equal "^1.1.0"
 
+react-scrollspy@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.4.2.tgz#0303e9a5d2fc4ee833b6729962bbb3b32375454c"
+  integrity sha512-mFev6IBPPGdn0WsAiS0eCoHGUUet0ZRZUHHUw3qLcsvsQZPlubik0N9cf8CcgIbdVzNd04K9L9A0inHhPt7drw==
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
+    prop-types "^15.5.10"
+
 react-select@^3.0.8:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-3.1.0.tgz#ab098720b2e9fe275047c993f0d0caf5ded17c27"
