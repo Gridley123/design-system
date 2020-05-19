@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Badge } from '@royalnavy/react-component-library'
 import { IconChevronLeft } from '@royalnavy/icon-library'
+import Prism from 'prismjs'
+import 'prismjs/plugins/line-numbers/prism-line-numbers'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 import packageJson from '../../package'
+
 
 import favicon16 from '../library/images/favicons/favicon-16x16.png'
 import favicon32 from '../library/images/favicons/favicon-32x32.png'
@@ -30,6 +34,10 @@ export const pageQuery = graphql`
 const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
 
   const [menuToggle, setMenuToggle] = useState(false)
+
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
 
 
   return (

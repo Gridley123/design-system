@@ -130,26 +130,6 @@ You can view a collection of example stories in our [Storybook](https://storyboo
   </div>
 </div>
 
-<div className="rn-fw-api">
-  <div className="rn-fw-api-header">
-    <h1 className="rn-fw-api-title">TimelineMonths</h1>
-  </div>
-  <div className="rn-fw-api-body">
-    <div className="rn-fw-api-row">
-      <div className="rn-fw-api-item">Type</div>
-      <p className="rn-fw-api-value"><code>Function&#60;index: number, dayWidth: number, daysTotal: number, startDate: Date‍&#62;</code></p>
-    </div>
-    <div className="rn-fw-api-row">
-      <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
-    </div>
-    <div className="rn-fw-api-row">
-      <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
-    </div>
-  </div>
-</div>
-
 </div>
 <div className="rn-fw-code rn-fw-md">
 
@@ -217,7 +197,7 @@ const ExampleTimeline = () => {
 </div>
 
 
-<div className="rn-fw-row">
+<div className="rn-fw-row rn-fw-row-section">
 <div className="rn-fw-copy rn-fw-md">
 
 ## Compound Components & Composition
@@ -290,6 +270,352 @@ const ExampleTimeline = () => {
   )
 }
 ```
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Context Provider
+[Context](https://reactjs.org/docs/context.html) provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+We expose the `TimelineContext` provider so that a consumer can create their own application specific components. The context provider exposes Timeline state and a `dispatch` function for dispatching reducer actions against the store.
+
+### State & Action dispatcher
+
+In this example we have created a custom component that consumes Timeline related state and dispatches reducer actions when buttons are clicked.
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+<div className="rn-fw-code-header">
+  <span className="rn-fw-code-file">ContextExample.js</span>
+</div>
+
+```js
+import React, { useContext } from 'react' 
+
+import { 
+  Timeline, 
+  TimelineRows 
+  TimelineContext, 
+  TIMELINE_ACTIONS 
+} from '@royalnavy/react-component-library'
+
+const CustomTimelineComponent = () => {
+  const { state: { months, weeks, days, options }, dispatch } = useContext(TimelineContext)
+
+  return (
+    <div>
+      <button onClick={_ => dispatch({ type: TIMELINE_ACTIONS.GET_PREV })}>Previous</button>
+      <button onClick={_ => dispatch({ type: TIMELINE_ACTIONS.GET_NEXT })}>Next</button>
+    </div>
+  )
+}
+
+const ExampleTimeline = () => {
+  return (
+    <Timeline>
+      <CustomTimelineComponent />
+      <TimelineRows>{}</TimelineRows>
+    </Timeline>
+  )
+}
+```
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Hooks
+We expose some [hooks](https://reactjs.org/docs/hooks-intro.html) in order to aid in the creation of your own custom Timeline components.
+
+### useTimelinePosition
+
+This hook takes a `startDate` and optional `endDate` and in return exposes the width and position (in the form of an `offset`) of an item relative to the date range currently displayed by the Timeline.
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+<div className="rn-fw-code-header">
+  <span className="rn-fw-code-file">HooksExample.js</span>
+</div>
+
+```js
+import React from 'react'
+
+import { useTimelinePosition } from '@royalnavy/react-component-library'
+
+const CustomTimelineComponent = ({
+  startDate,
+  endDate
+}) => {
+  const {
+    width,
+    offset,
+    isBeforeStart,
+    isAfterEnd
+  } = useTimelinePosition(startDate, endDate)
+
+  if (isBeforeStart || isAfterEnd) return null
+
+  return (
+    <div style={{
+        position: 'absolute',
+        display: 'inline-block',
+        width,
+        left: offset
+        // ...
+      }} 
+    />
+  )
+}
+```
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Advanced Custom Layouts
+Through the use of clever composition and custom styling, it's possible to create layouts that are either nuanced or high in complexity. Below is an [example of a custom layout](https://github.com/m7kvqbe1/fp-grey-box) that adds groupings to rows:
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+</div>
+</div>
+
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Hooks API
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value">-</p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The start date of the event.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">endDate</h1>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>NULL</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The start date of the event.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+</div>
+</div>
+
+
+<div className="rn-fw-row rn-fw-row-section">
+<div className="rn-fw-copy rn-fw-md">
+
+## Component APIs
+Here you will find comprehensive API documentation for the Timeline Components.
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+</div>
+</div>
+
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Timeline
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value">-</p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">today</h1>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>new Date()</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Today's current date - default is the system date time.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">range</h1>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>3</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The number of months to display at any one time.</p>
+    </div>
+  </div>
+</div>
+
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">dayWidth</h1>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>30</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The fixed width value of a single day (in pixels).</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineTodayMarker
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>Function&#60;today: Date, offset: string&#62;</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineSide
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>Function&#60;&#62;</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineMonths
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value"><code>Function&#60;index: number, isOddNumber: boolean, offsetPx: string, widthPx: string; dayWidth: number, daysTotal: number, startDate: Date&#62;</code></p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
 
 
 </div>
