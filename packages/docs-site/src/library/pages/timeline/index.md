@@ -65,7 +65,7 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
-    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
@@ -82,12 +82,12 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">today</h1>
-    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value is-code">new Date()</p>
+      <p className="rn-fw-api-value"><code>new Date()</code></p>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -99,7 +99,7 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">range</h1>
-    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
@@ -116,9 +116,29 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">dayWidth</h1>
-    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <p className="rn-fw-api-value">-</p>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">TimelineMonths</h1>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Type</div>
+      <p className="rn-fw-api-value"><code>Function&#60;index: number, dayWidth: number, daysTotal: number, startDate: Date‍&#62;</code></p>
+    </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <p className="rn-fw-api-value">-</p>
