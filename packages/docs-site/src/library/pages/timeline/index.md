@@ -64,7 +64,7 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
-    <h1 className="rn-fw-api-title">s
+    <h1 className="rn-fw-api-title">
       startDate
       <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
