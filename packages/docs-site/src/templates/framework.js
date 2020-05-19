@@ -31,7 +31,7 @@ export const pageQuery = graphql`
   }
 `
 
-const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
+const FrameworkPageTemplate = ({ data: { mdx } }) => {
 
   const [menuToggle, setMenuToggle] = useState(false)
 
@@ -65,13 +65,24 @@ const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
         ]}
       />
       <div className="rn-fw-bar">
-        <button className="rn-fw-sidebar-toggle rn-fw-sidebar-open" onClick={() => setMenuToggle(!menuToggle)}>Menu</button>
+        <button
+          className="rn-fw-sidebar-toggle rn-fw-sidebar-open"
+          onClick={() => setMenuToggle(!menuToggle)}
+        >
+          Menu
+        </button>
         <div className="rn-fw-bar-ds">
+          <span className="rn-fw-bar-title rn_mr-4">
+            Royal Navy Design System
+          </span>
           <Badge color="action">v{packageJson.version}</Badge>
-          <span className="rn-fw-bar-title rn_ml-4">Royal Navy Design System</span>
         </div>
       </div>
-      <div className={menuToggle ? 'rn-fw-sidebar-frame is-open' : 'rn-fw-sidebar-frame'}>
+      <div
+        className={
+          menuToggle ? 'rn-fw-sidebar-frame is-open' : 'rn-fw-sidebar-frame'
+        }
+      >
         <div className="rn-fw-sidebar">
           <div className="rn-fw-sidebar-fixed">
             <a href="/" className="rn-fw-sidebar-home-link">
@@ -79,27 +90,41 @@ const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
               Back to docs
             </a>
             <div className="rn-fw-sidebar-header">
-              <Badge color="action" colorVariant="solid" size="small">Framework</Badge>
+              <Badge color="action" colorVariant="solid" size="small">
+                Framework
+              </Badge>
               <h1 className="rn-fw-sidebar-title">Compound Timeline</h1>
             </div>
-            <button className="rn-fw-sidebar-toggle rn-fw-sidebar-close" onClick={() => setMenuToggle(!menuToggle)}>Close</button>
+            <button
+              className="rn-fw-sidebar-toggle rn-fw-sidebar-close"
+              onClick={() => setMenuToggle(!menuToggle)}
+            >
+              Close
+            </button>
           </div>
           <nav className="rn-fw-sidebar-nav rn-fw-sidebar-scroll">
-
             <section className="rn-fw-sidebar-nav-section">
               <h4 className="rn-fw-sidebar-nav-section-title">Introduction</h4>
               <ul className="rn-fw-sidebar-nav-list">
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Motivation</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Motivation
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Installation</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Installation
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Options</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Options
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Example Usage</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Example Usage
+                  </a>
                 </li>
               </ul>
             </section>
@@ -108,64 +133,98 @@ const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
               <h4 className="rn-fw-sidebar-nav-section-title">Documentation</h4>
               <ul className="rn-fw-sidebar-nav-list">
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Compound Components &amp; Composition</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Compound Components &amp; Composition
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
                   <a className="rn-fw-sidebar-nav-link is-active" href="#foo">
                     Custom Component Presentation
-                    <span className="rn-fw-sidebar-nav-link-child">Render Props</span>
+                    <span className="rn-fw-sidebar-nav-link-child">
+                      Render Props
+                    </span>
                   </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Context Provider</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Context Provider
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">State &amp; Action Dispatcher</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    State &amp; Action Dispatcher
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
                   <a className="rn-fw-sidebar-nav-link" href="#foo">
                     Hooks
-                    <span className="rn-fw-sidebar-nav-link-child">useTimelinePosition</span>
+                    <span className="rn-fw-sidebar-nav-link-child">
+                      useTimelinePosition
+                    </span>
                   </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Advanced Custom Layouts</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Advanced Custom Layouts
+                  </a>
                 </li>
               </ul>
             </section>
 
             <section className="rn-fw-sidebar-nav-section">
-              <h4 className="rn-fw-sidebar-nav-section-title">Component APIs</h4>
+              <h4 className="rn-fw-sidebar-nav-section-title">
+                Component APIs
+              </h4>
               <ul className="rn-fw-sidebar-nav-list is-code">
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Timeline</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Timeline
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link is-active" href="#foo">TimelineTodayMarker</a>
+                  <a className="rn-fw-sidebar-nav-link is-active" href="#foo">
+                    TimelineTodayMarker
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineSide</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineSide
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineMonths</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineMonths
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineWeeks</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineWeeks
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineDays</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineDays
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineRows</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineRows
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineRow</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineRow
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineEvents</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineEvents
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">TimelineEvent</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    TimelineEvent
+                  </a>
                 </li>
               </ul>
             </section>
@@ -174,28 +233,36 @@ const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
               <h4 className="rn-fw-sidebar-nav-section-title">More Info</h4>
               <ul className="rn-fw-sidebar-nav-list">
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Roadmap</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Roadmap
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Contributing</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Contributing
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">Changelog</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Changelog
+                  </a>
                 </li>
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#foo">License</a>
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    License
+                  </a>
                 </li>
               </ul>
             </section>
-
-
           </nav>
         </div>
       </div>
       <div className="rn-fw-content">
         <div className="rn-fw-row">
           <div className="rn-fw-copy rn-fw-hero">
-            <Badge color="action" colorVariant="solid">Framework</Badge>
+            <Badge color="action" colorVariant="solid">
+              Framework
+            </Badge>
             <h1 className="rn-fw-page-title">{mdx.frontmatter.title}</h1>
             <p className="rn-fw-page-lede">{mdx.frontmatter.description}</p>
           </div>
@@ -207,8 +274,7 @@ const FrameworkPageTemplate = ({ data: { mdx }, location }) => {
 }
 
 FrameworkPageTemplate.propTypes = {
-  data: PropTypes.instanceOf(Object).isRequired,
-  location: PropTypes.instanceOf(Object).isRequired,
+  data: PropTypes.instanceOf(Object).isRequired
 }
 
 export default FrameworkPageTemplate

@@ -65,12 +65,14 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -82,16 +84,18 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">today</h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>new Date()</code></p>
+      <div className="rn-fw-api-value">
+        <code>new Date()</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Today's current date - default is system date time.</p>
     </div>
   </div>
 </div>
@@ -99,16 +103,18 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">range</h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
+      <div className="rn-fw-api-value">
+        <code>3</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">The number of months to display at any one time.</p>
     </div>
   </div>
 </div>
@@ -116,16 +122,18 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">dayWidth</h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
+      <div className="rn-fw-api-value">
+        <code>30</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">The fixed width value of a single day (in pixels).</p>
     </div>
   </div>
 </div>
@@ -396,17 +404,19 @@ Through the use of clever composition and custom styling, it's possible to creat
 <div className="rn-fw-row">
 <div className="rn-fw-copy rn-fw-md">
 
-## Hooks API
+## Hooks APIs
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -418,16 +428,18 @@ Through the use of clever composition and custom styling, it's possible to creat
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">endDate</h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date &#124; Null</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>NULL</code></p>
+      <div className="rn-fw-api-value">
+        <code>Null</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">The start date of the event.</p>
+      <p className="rn-fw-api-value">The end date of the event.</p>
     </div>
   </div>
 </div>
@@ -460,12 +472,14 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value">-</p>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -477,12 +491,14 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">today</h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>new Date()</code></p>
+      <div className="rn-fw-api-value">
+        <code>new Date()</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -494,12 +510,14 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">range</h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>3</code></p>
+      <div className="rn-fw-api-value">
+        <code>3</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -512,12 +530,14 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">dayWidth</h1>
-    <Badge color="action" colorVariant="faded" size="small">Number</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Number</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>30</code></p>
+      <div className="rn-fw-api-value">
+        <code>30</code>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -542,16 +562,27 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">render</h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>Function&#60;today: Date, offset: string&#62;</code></p>
+      <div className="rn-fw-api-value"><code>Function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">today</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">offset</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+        </ul>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -571,12 +602,14 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">render</h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>Function&#60;&#62;</code></p>
+      <div className="rn-fw-api-value">
+        <code>Function</code>        
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -600,12 +633,31 @@ Here you will find comprehensive API documentation for the Timeline Components.
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">render</h1>
-    <Badge color="action" colorVariant="faded" size="small">Date</Badge>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
   </div>
   <div className="rn-fw-api-body">
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
-      <p className="rn-fw-api-value"><code>Function&#60;index: number, isOddNumber: boolean, offsetPx: string, widthPx: string; dayWidth: number, daysTotal: number, startDate: Date&#62;</code></p>
+      <div className="rn-fw-api-value"><code>Function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">index</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">dayWidth</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">daysTotal</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">startDate</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>
+        </ul>
+      </div>
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
@@ -619,4 +671,442 @@ Here you will find comprehensive API documentation for the Timeline Components.
 
 
 </div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineWeeks
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value"><code>Function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">index</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">isOddNumber</code>
+            <span className="rn-fw-api-value-type">boolean</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">offsetPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">widthPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">dayWidth</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">daysTotal</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">startDate</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineDays
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value"><code>Function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">index</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">dayWidth</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">date</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>          
+        </ul>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineRows
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">index</code>
+            <span className="rn-fw-api-value-type">number</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">isOddNumber</code>
+            <span className="rn-fw-api-value-type">boolean</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">offsetPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">widthPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      children
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Supply children to be rendered.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineRow
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      name
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">string</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A descriptive identifier for the row.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      children
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Supply children to be rendered.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineEvents
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      children
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Supply children to be rendered.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## TimelineEvent
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      startDate
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The start date of the event.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      endDate
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>-</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">The end date of the event.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">render</h1>
+    <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+        <ul className="rn-fw-api-value-list">
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">startDate</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">endDate</code>
+            <span className="rn-fw-api-value-type">Date</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">widthPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+          <li className="rn-fw-api-value-item">
+            <code className="rn-fw-api-value-name">offsetPx</code>
+            <span className="rn-fw-api-value-type">string</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+    </div>
+  </div>
+</div>
+
+<div className="rn-fw-api">
+  <div className="rn-fw-api-header">
+    <h1 className="rn-fw-api-title">
+      children
+      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
+    <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
+  </div>
+  <div className="rn-fw-api-body">
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Default Value</div>
+      <div className="rn-fw-api-value">
+        <code>function</code>
+      </div>
+    </div>
+    <div className="rn-fw-api-row">
+      <div className="rn-fw-api-item">Description</div>
+      <p className="rn-fw-api-value">Supply children to be rendered.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+
+</div>
+</div>
+
+
+<div className="rn-fw-row rn-fw-row-section">
+<div className="rn-fw-copy rn-fw-md">
+
+## Roadmap
+
+- Migrate to independent package within monorepo
+- Adopt [styled-components](https://github.com/styled-components/styled-components) for default presentation
+- Expose TimelineSide render prop
+- Add demos to sandbox
+- Iterate upon default presentation (user research and design)
+- Investigate support for advanced features:
+  - Infinite scroll
+  - Lazy loading
+  - View scaling (micro to macro / hours to years)
+  - Drag and drop
+
+</div>
+<div className="rn-fw-code rn-fw-md"></div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Contributing
+
+The [contributing guide](https://github.com/Royal-Navy/design-system/blob/master/docs/contributing.md) resource presents information about our development process.
+
+</div>
+<div className="rn-fw-code rn-fw-md"></div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## Changelog
+
+If you have recently updated then read the [release notes](https://github.com/Royal-Navy/design-system/releases).
+
+</div>
+<div className="rn-fw-code rn-fw-md"></div>
+</div>
+
+<div className="rn-fw-row">
+<div className="rn-fw-copy rn-fw-md">
+
+## License
+
+The Royal Navy Design System is licensed under the [Apache License 2.0](https://github.com/Royal-Navy/design-system/blob/master/LICENSE).
+
+</div>
+<div className="rn-fw-code rn-fw-md"></div>
 </div>
