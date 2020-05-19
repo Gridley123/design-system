@@ -187,6 +187,7 @@
   padding: rn.spacing("4") rn.spacing("12") rn.spacing("4") calc(2rem - 4px);
   color: rn.color("neutral", "white");
   font-weight: 100;
+  z-index: 1;
   &:hover,
   &.is-active {
     border-left-color: rn.color("action", "400");
@@ -201,6 +202,7 @@
       bottom: 0;
       background-color: rn.color("action", "600");
       opacity: 0.2;
+      z-index: -1;
     }
   }
 }
@@ -261,21 +263,25 @@
   width: 100%;
 
   @include rn.breakpoint("s") {
-    padding: rn.spacing("14") rn.spacing("14");
+    padding: rn.spacing("14");
   }
 
   @include rn.breakpoint("xl") {
     width: 50%;
   }
 
-  @media only screen and (min-width: 1800px) {
-    width: 40%;
+  @media only screen and (min-width: 1900px) {
+    width: 900px;
+    padding: rn.spacing("15");
   }
 
   &.rn-fw-hero {
     padding: rn.spacing("14") rn.spacing("10");
     @include rn.breakpoint("s") {
       padding: rn.spacing("16") rn.spacing("14");
+    }
+    @media only screen and (min-width: 1900px) {
+      padding: rn.spacing("16") rn.spacing("15");
     }
   }
 
@@ -299,8 +305,8 @@
     padding-top: rn.spacing("15");
     padding-bottom: rn.spacing("13");
   }
-  @media only screen and (min-width: 1800px) {
-    width: 60%;
+  @media only screen and (min-width: 1900px) {
+    width: calc(100% - 900px);
   }
   &:empty {
     display: none;
