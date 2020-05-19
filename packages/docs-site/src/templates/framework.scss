@@ -553,13 +553,15 @@
     }
   }
 
-  p {
-    code {
+
+  p,
+  li {
+    code:not(.rn-fw-api-value-name) {
       font-family: 'Courier New', Courier, monospace;
       font-weight: 600;
       font-size: rn.font-size("m");
-      color: rn.color("action", "700");
-      background-color: rn.color("action", "000");
+      color: rn.color("action", "600");
+      background-color: rn.color("neutral", "000");
       padding: rn.spacing("1") rn.spacing("3") 0 rn.spacing("3");
     }
   }

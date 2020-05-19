@@ -108,6 +108,11 @@ const FrameworkPageTemplate = ({ data: { mdx } }) => {
               <ul className="rn-fw-sidebar-nav-list">
                 <li className="rn-fw-sidebar-nav-list-item">
                   <a className="rn-fw-sidebar-nav-link" href="#foo">
+                    Home
+                  </a>
+                </li>
+                <li className="rn-fw-sidebar-nav-list-item">
+                  <a className="rn-fw-sidebar-nav-link" href="#foo">
                     Motivation
                   </a>
                 </li>

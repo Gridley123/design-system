@@ -64,7 +64,10 @@ You can view a collection of example stories in our [Storybook](https://storyboo
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
-    <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
+    <h1 className="rn-fw-api-title">s
+      tartDate
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
     <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
@@ -408,7 +411,10 @@ Through the use of clever composition and custom styling, it's possible to creat
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
-    <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
+    <h1 className="rn-fw-api-title">
+      startDate
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
     <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
@@ -471,7 +477,10 @@ Here you will find comprehensive API documentation for the Timeline Components.
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
-    <h1 className="rn-fw-api-title">startDate <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge></h1>
+    <h1 className="rn-fw-api-title">
+      startDate
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+    </h1>
     <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
   <div className="rn-fw-api-body">
@@ -661,7 +670,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -721,7 +730,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -767,7 +776,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -818,7 +827,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -827,7 +836,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       children
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
   </div>
@@ -861,7 +870,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       name
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">string</Badge>
   </div>
@@ -883,7 +892,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       children
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
   </div>
@@ -917,7 +926,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       children
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
   </div>
@@ -951,7 +960,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       startDate
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
@@ -973,7 +982,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       endDate
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">Date</Badge>
   </div>
@@ -1023,7 +1032,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     </div>
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Description</div>
-      <p className="rn-fw-api-value">A month will display either side of this start date.</p>
+      <p className="rn-fw-api-value">Supply a custom presentation layer.</p>
     </div>
   </div>
 </div>
@@ -1032,7 +1041,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">
       children
-      <Badge color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
+      <Badge className="rn_ml-4" color="danger" colorVariant="faded" variant="pill" size="small">Required</Badge>
     </h1>
     <Badge color="supa" colorVariant="faded" size="small">React.ReactNode &#124; React.ReactNode[]</Badge>
   </div>
@@ -1065,7 +1074,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
 
 - Migrate to independent package within monorepo
 - Adopt [styled-components](https://github.com/styled-components/styled-components) for default presentation
-- Expose TimelineSide render prop
+- Expose `TimelineSide` render prop
 - Add demos to sandbox
 - Iterate upon default presentation (user research and design)
 - Investigate support for advanced features:
