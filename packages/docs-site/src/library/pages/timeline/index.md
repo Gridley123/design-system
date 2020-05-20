@@ -27,7 +27,23 @@ We identified commonality across applications in two key areas:
 
 </div>
 <div className="rn-fw-code rn-fw-md">
-  <ExampleTimeline />
+  
+</div>
+</div>
+<div className="rn-fw-row" id="options">
+<div className="rn-fw-copy rn-fw-md">
+
+## Live Example
+Interact with the Timeline Framework below, or view more stories in our [Storybook](https://storybook.royalnavy.io).
+
+</div>
+<div className="rn-fw-code rn-fw-demo rn-fw-md">
+  <div className="rn-fw-code-header">
+    <span className="rn-fw-code-file">Live Example</span>
+  </div>
+  <div className="rn-fw-demo-wrapper">
+    <ExampleTimeline />
+  </div>
 </div>
 </div>
 

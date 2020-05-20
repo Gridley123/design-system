@@ -311,6 +311,18 @@
   }
 }
 
+.rn-fw-demo-wrapper {
+  padding: 0 rn.spacing("10") rn.spacing("10");
+  @include rn.breakpoint("s") {
+    padding: 0 rn.spacing("14") rn.spacing("12");
+  }
+  @include rn.breakpoint("xl") {
+    padding: 0 rn.spacing("12");
+  }
+}
+
+
+
 .rn-fw-row-section {
   .rn-fw-copy {
     border-top: 24px solid rn.color("neutral", "000");
