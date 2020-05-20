@@ -6,6 +6,7 @@ template: framework
 ---
 
 import { Badge } from '@royalnavy/react-component-library'
+import { ExampleTimeline } from '../../../components/presenters/example-timeline'
 
 <div className="rn-fw-row" id="motivation">
 <div className="rn-fw-copy rn-fw-md">
@@ -24,9 +25,10 @@ We identified commonality across applications in two key areas:
 - Generated data structures and state
 - Common but extensible interfaces
 
-
 </div>
-<div className="rn-fw-code rn-fw-md"></div>
+<div className="rn-fw-code rn-fw-md">
+  <ExampleTimeline />
+</div>
 </div>
 
 <div className="rn-fw-row" id="installation">
