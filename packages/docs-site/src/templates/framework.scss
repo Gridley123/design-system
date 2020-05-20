@@ -402,7 +402,7 @@
   align-items: center;
   padding-top: 0;
   @include rn.breakpoint("xl") {
-    padding-top: rn.spacing("8");
+    padding-top: rn.spacing("12");
   }
   svg {
     width: 100%;
