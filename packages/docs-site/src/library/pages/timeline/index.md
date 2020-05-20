@@ -822,7 +822,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
         <ul className="rn-fw-api-value-list">
           <li className="rn-fw-api-value-item">
             <code className="rn-fw-api-value-name">index</code>
@@ -862,7 +862,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
@@ -918,7 +918,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
@@ -952,7 +952,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
