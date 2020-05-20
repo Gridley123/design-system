@@ -346,10 +346,10 @@
   &.rn-fw-hero {
     padding: rn.spacing("14") rn.spacing("10");
     @include rn.breakpoint("s") {
-      padding: rn.spacing("16") rn.spacing("14");
+      padding: rn.spacing("16") rn.spacing("14") rn.spacing("15") rn.spacing("14");
     }
     @media only screen and (min-width: 1900px) {
-      padding: rn.spacing("16") rn.spacing("15");
+      padding: rn.spacing("17") rn.spacing("15");
     }
   }
 
