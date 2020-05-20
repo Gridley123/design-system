@@ -322,6 +322,8 @@
   }
 }
 
+
+
 .rn-fw-copy {
   border-top: 4px solid rn.color("neutral", "000");
   background-color: rn.color("neutral", "white");
@@ -392,6 +394,20 @@
   }
   @include rn.breakpoint("xl") {
     padding-left: rn.spacing("12");
+  }
+}
+
+.rn-fw-illustration {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  @include rn.breakpoint("xl") {
+    padding-top: rn.spacing("8");
+  }
+  svg {
+    width: 100%;
+    max-width: 670px;
+    display: block;
   }
 }
 
@@ -565,9 +581,12 @@
       font-family: 'Courier New', Courier, monospace;
       font-weight: 600;
       font-size: rn.font-size("m");
-      color: rn.color("action", "600");
+      color: rn.color("neutral", "500");
       background-color: rn.color("neutral", "000");
       padding: rn.spacing("1") rn.spacing("3") 0 rn.spacing("3");
+    }
+    ul {
+      margin-top: rn.spacing("4");
     }
   }
 

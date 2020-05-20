@@ -603,12 +603,12 @@ Here you will find comprehensive API documentation for the Timeline Components.
 </div>
 </div>
 
-<div className="rn-fw-row">
+<div className="rn-fw-row" id="timeline-side">
 <div className="rn-fw-copy rn-fw-md">
 
 ## TimelineSide
 
-<div className="rn-fw-api" id="timeline-side">
+<div className="rn-fw-api">
   <div className="rn-fw-api-header">
     <h1 className="rn-fw-api-title">render</h1>
     <Badge color="supa" colorVariant="faded" size="small">Func</Badge>
