@@ -16,6 +16,7 @@
 
 .rn-fw {
   background-color: rn.color("neutral", "700");
+  font-variant-ligatures: normal;
 }
 
 
@@ -212,9 +213,10 @@
 .rn-fw-sidebar-nav-list {
   padding: 0;
   &.is-code {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
     .rn-fw-sidebar-nav-link {
+      font-weight: 300;
+      font-size: rn.font-size("base");
+      font-family: 'Fira Code', 'Courier New', Courier, monospace;
       padding-top: rn.spacing("5");
     }
   }
@@ -375,6 +377,15 @@
   }
 }
 
+.rn-fw-diagram {
+  margin-top: rn.spacing("12");
+  svg {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rn.color("neutral", "100");
+    border-radius: 3px;
+  }
+}
+
 .rn-fw-code {
   background-color: rn.color("neutral", "700");
   padding-top: rn.spacing("8");
@@ -444,7 +455,6 @@
 }
 
 .rn-fw-api-title {
-  font-family: 'Courier New', Courier, monospace;
   font-size: rn.font-size("m");
   margin: 0;
   .rn-badge {
@@ -484,14 +494,12 @@
   }
   > code {
     font-size: rn.font-size("m");
-    font-family: 'Courier New', Courier, monospace;
     color: rn.color("neutral", "500");
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -0.5px;
-    transform: translateY(-1px);
     background-color: rn.color("neutral", "000");
     display: block;
-    margin: rn.spacing("2") 0 rn.spacing("4");
+    margin: rn.spacing("px") 0 rn.spacing("4");
     padding-left: 0;
   }
 }
@@ -570,7 +578,6 @@
     background-color: rn.color("neutral", "800");
     max-width: 100%;
     overflow-x: scroll;
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: rn.spacing("12") rn.spacing("14") rn.spacing("12") rn.spacing("10");
     @include rn.breakpoint("s") {
@@ -580,18 +587,16 @@
       padding-left: rn.spacing("12");
     }
     code {
-      font-weight: 500;
-      line-height: 1.4;
-      font-size: rn.font-size("base");
+      font-weight: 200;
+      line-height: 1;
+      font-size: rn.font-size("code");
     }
   }
-
 
   p,
   li {
     code:not(.rn-fw-api-value-name) {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: 600;
+      font-weight: 500;
       font-size: rn.font-size("m");
       color: rn.color("neutral", "500");
       background-color: rn.color("neutral", "000");

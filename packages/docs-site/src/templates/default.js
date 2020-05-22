@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import '@royalnavy/fonts'
+import 'firacode'
 
 import Layout from '../components/presenters/layout'
 import MastHead from '../components/presenters/Masthead'

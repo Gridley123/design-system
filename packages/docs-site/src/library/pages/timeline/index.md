@@ -7,6 +7,7 @@ template: framework
 
 import { Badge } from '@royalnavy/react-component-library'
 import { ExampleTimeline } from '../../../components/presenters/example-timeline'
+import TimelineLayout from '../../images/components/timeline/layouts'
 
 <div className="rn-fw-row" id="motivation">
 <div className="rn-fw-copy rn-fw-md">
@@ -30,7 +31,7 @@ We identified commonality across applications in two key areas:
   
 </div>
 </div>
-<div className="rn-fw-row" id="options">
+<div className="rn-fw-row" id="live-example">
 <div className="rn-fw-copy rn-fw-md">
 
 ## Live Example
@@ -55,7 +56,7 @@ Interact with the Timeline Framework below, or view more stories in our [Storybo
 To install the framework, use the commands opposite. You can use either [yarn](https://yarnpkg.com/) or [npm](https://npmjs.com/).
 
 </div>
-<div className="rn-fw-code rn-fw-md">
+<div className="rn-fw-code rn-fw-md rn-fw-font-boost">
 
 <div className="rn-fw-code-header">
   <span className="rn-fw-code-file">Command Line</span>
@@ -413,11 +414,14 @@ const CustomTimelineComponent = ({
 <div className="rn-fw-copy rn-fw-md">
 
 ## Advanced Custom Layouts
-Through the use of clever composition and custom styling, it's possible to create layouts that are either nuanced or high in complexity. Below is an [example of a custom layout](https://github.com/m7kvqbe1/fp-grey-box) that adds groupings to rows:
+Through the use of clever composition and custom styling, it's possible to create layouts that are either nuanced or high in complexity. Here is an [example of a custom layout](https://github.com/m7kvqbe1/fp-grey-box) that adds groupings to rows:
+
+<div className="rn-fw-diagram">
+  <TimelineLayout />
+</div>
 
 </div>
 <div className="rn-fw-code rn-fw-md">
-
 </div>
 </div>
 
