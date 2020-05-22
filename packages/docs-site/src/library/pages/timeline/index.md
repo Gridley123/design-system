@@ -32,11 +32,7 @@ We identified commonality across applications in two key areas:
   
 </div>
 </div>
-<<<<<<< HEAD
 <div className="rn-fw-row" id="live-example">
-=======
-<div className="rn-fw-row" id="example">
->>>>>>> 77ec78790139aea7d4ec4cba9c1c8f90b6fe402c
 <div className="rn-fw-copy rn-fw-md">
 
 ## Live Example
