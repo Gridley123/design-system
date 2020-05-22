@@ -30,8 +30,8 @@ export const ExampleTimeline = () => {
         <TimelineRow name="Row 1">
           <TimelineEvents>
             <TimelineEvent
-              startDate={new Date(2020, 3, 14)}
-              endDate={new Date(2020, 3, 18)}
+              startDate={new Date(2020, 3, 2)}
+              endDate={new Date(2020, 3, 8)}
             >
               Event 1
             </TimelineEvent>
@@ -41,7 +41,7 @@ export const ExampleTimeline = () => {
           <TimelineEvents>
             <TimelineEvent
               startDate={new Date(2020, 3, 3)}
-              endDate={new Date(2020, 3, 8)}
+              endDate={new Date(2020, 3, 10)}
             >
               Event 2
             </TimelineEvent>

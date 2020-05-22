@@ -14,12 +14,9 @@ import 'firacode'
 
 import packageJson from '../../package'
 
-
 import favicon16 from '../library/images/favicons/favicon-16x16.png'
 import favicon32 from '../library/images/favicons/favicon-32x32.png'
 import favicon96 from '../library/images/favicons/favicon-96x96.png'
-
-
 
 export const pageQuery = graphql`
   query FrameworkPageQuery($id: String) {
@@ -35,13 +32,11 @@ export const pageQuery = graphql`
 `
 
 const FrameworkPageTemplate = ({ data: { mdx } }) => {
-
   const [menuToggle, setMenuToggle] = useState(false)
 
   useEffect(() => {
     Prism.highlightAll()
   }, [])
-
 
   return (
     <section className="rn-fw">
@@ -186,9 +181,18 @@ const FrameworkPageTemplate = ({ data: { mdx } }) => {
                     Advanced Custom Layouts
                   </a>
                 </li>
+              </ul>
+            </section>
+
+            <section className="rn-fw-sidebar-nav-section">
+              <h4 className="rn-fw-sidebar-nav-section-title">Hook APIs</h4>
+              <ul className="rn-fw-sidebar-nav-list is-code">
                 <li className="rn-fw-sidebar-nav-list-item">
-                  <a className="rn-fw-sidebar-nav-link" href="#hooks-apis">
-                    Hooks APIs
+                  <a
+                    className="rn-fw-sidebar-nav-link"
+                    href="#useTimelinePosition"
+                  >
+                    useTimelinePosition
                   </a>
                 </li>
               </ul>
@@ -398,7 +402,7 @@ const FrameworkPageTemplate = ({ data: { mdx } }) => {
 }
 
 FrameworkPageTemplate.propTypes = {
-  data: PropTypes.instanceOf(Object).isRequired
+  data: PropTypes.instanceOf(Object).isRequired,
 }
 
 export default FrameworkPageTemplate

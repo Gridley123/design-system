@@ -15,14 +15,15 @@ import TimelineLayout from '../../images/components/timeline/layouts'
 ## Motivation
 
 Identify commonality across applications utilising scheduling related patterns, with the aim to abstract out a library that helps to ensure the integrity and future maintainability of applications with disparate sets of scheduling related use cases.
+
 We identified commonality across applications in two key areas:
 
 ### How something "looks and feels"
-- Somewhat nuanced but based on problem domain
+- Somewhat but nuanced based on problem domain
 
 ### How something works "under the hood"
-- Data manipulation
-- Positioning arbitrary components over a timeline
+- DateTime manipulation
+- Positioning and sizing arbitrary components across a timeline
 - Generated data structures and state
 - Common but extensible interfaces
 
@@ -31,11 +32,15 @@ We identified commonality across applications in two key areas:
   
 </div>
 </div>
+<<<<<<< HEAD
 <div className="rn-fw-row" id="live-example">
+=======
+<div className="rn-fw-row" id="example">
+>>>>>>> 77ec78790139aea7d4ec4cba9c1c8f90b6fe402c
 <div className="rn-fw-copy rn-fw-md">
 
 ## Live Example
-Interact with the Timeline Framework below, or view more stories in our [Storybook](https://storybook.royalnavy.io).
+Interact with the Live Example, or view more stories in our [Storybook](https://storybook.royalnavy.io).
 
 </div>
 <div className="rn-fw-code rn-fw-demo rn-fw-md">
@@ -53,7 +58,7 @@ Interact with the Timeline Framework below, or view more stories in our [Storybo
 
 ## Installation
 
-To install the framework, use the commands opposite. You can use either [yarn](https://yarnpkg.com/) or [npm](https://npmjs.com/).
+You can use either [yarn](https://yarnpkg.com/) or [npm](https://npmjs.com/) to install the framework.
 
 </div>
 <div className="rn-fw-code rn-fw-md rn-fw-font-boost">
@@ -78,8 +83,6 @@ yarn add @royalnavy/css-framework @royalnavy/react-component-library
 <div className="rn-fw-copy rn-fw-md">
 
 ## Options
-
-You can view a collection of example stories in our [Storybook](https://storybook.royalnavy.io).
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
@@ -254,7 +257,7 @@ We aim to empower the consumer by enabling them to override the presentation of 
 
 ### Render Props
 
-[Render props](https://reactjs.org/docs/render-props.html) allow us to provide custom persentation layers to our compound components by exposing any relevant internal state. See the example usage opposite for the  `TimelineMonths`  component.
+[Render props](https://reactjs.org/docs/render-props.html) allow us to provide custom persentation layers to our compound components by exposing any relevant internal state. See the example usage for the  `TimelineMonths`  component.
 
 </div>
 <div className="rn-fw-code rn-fw-md">
@@ -426,10 +429,22 @@ Through the use of clever composition and custom styling, it's possible to creat
 </div>
 
 
-<div className="rn-fw-row" id="hooks-apis">
+<div className="rn-fw-row rn-fw-row-section" id="hook-apis">
 <div className="rn-fw-copy rn-fw-md">
 
-## Hooks APIs
+## Hook APIs
+Here you will find comprehensive API documentation for the Timeline Hooks.
+
+</div>
+<div className="rn-fw-code rn-fw-md">
+
+</div>
+</div>
+
+<div className="rn-fw-row" id="useTimelinePosition">
+<div className="rn-fw-copy rn-fw-md">
+
+## useTimelinePosition
 
 <div className="rn-fw-api">
   <div className="rn-fw-api-header">
@@ -826,7 +841,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
         <ul className="rn-fw-api-value-list">
           <li className="rn-fw-api-value-item">
             <code className="rn-fw-api-value-name">index</code>
@@ -866,7 +881,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
@@ -922,7 +937,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
@@ -956,7 +971,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">
@@ -1031,7 +1046,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
         <ul className="rn-fw-api-value-list">
           <li className="rn-fw-api-value-item">
             <code className="rn-fw-api-value-name">startDate</code>
@@ -1071,7 +1086,7 @@ Here you will find comprehensive API documentation for the Timeline Components.
     <div className="rn-fw-api-row">
       <div className="rn-fw-api-item">Default Value</div>
       <div className="rn-fw-api-value">
-        <code>function</code>
+        <code>Function</code>
       </div>
     </div>
     <div className="rn-fw-api-row">

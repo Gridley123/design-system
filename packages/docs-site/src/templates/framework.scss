@@ -13,6 +13,14 @@
 .fw-100 { font-weight: 100 }
 
 
+// Prevent style bleed into Live Example
+.timeline {
+  font-weight: normal;
+
+  ol li {
+    margin-bottom: unset;
+  }
+}
 
 .rn-fw {
   background-color: rn.color("neutral", "700");
